@@ -6,7 +6,7 @@ function showGreeting() {
     if (name) {
         greetingElement.innerHTML = ``Happy birthday ${name}! Muachhhh😘😘`;
     } else {
-        greetingElement.textContent = 'Tolong masukkan nama terlebih dahulu!';
+        greetingElement.textContent = 'Pakek Nama Lue Ini!';
     }
 }
 
