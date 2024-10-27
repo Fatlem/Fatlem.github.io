@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nassy</title>
+    <link rel="icon" href="image/hbd.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>🎉Nassy!🎉</h1>
+            <p class="hbd-text">
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+                HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD HBD 
+            </p>
+            <p>May this year bring you endless happiness and success!</p>
+            <button onclick="showMessage()">Make a Wish!</button>
+        </div>
+        <div class="hidden-message" id="hidden-message">
+            <p>Your wish is granted! 🎂</p>
+            <p>Happy Birthday once again!</p>
+        </div>
+    </div>
+    <script>
+        const backgrounds = [
+            'image/ambulalu.png',
+            'image/rusdi.png',
+            'image/gugugaga.png',
+            // Tambahkan lebih banyak gambar jika diinginkan
+        ];
+
+        let currentIndex = 0;
+
+        function changeBackground() {
+            document.body.style.backgroundImage = `url('${backgrounds[currentIndex]}')`;
+            currentIndex = (currentIndex + 1) % backgrounds.length; // Mengubah indeks
+        }
+
+        // Mengganti gambar setiap 2 detik
+        setInterval(changeBackground, 1000);
+        
+        // Mengatur gambar latar belakang pertama
+        changeBackground();
+
+        function showMessage() {
+            document.getElementById('hidden-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
